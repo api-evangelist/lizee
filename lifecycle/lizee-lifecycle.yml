@@ -1,0 +1,60 @@
+generated: '2026-07-20'
+method: searched
+source: https://lizee.statuspage.io/api/v2/summary.json
+name: Lizee Lifecycle & Operations
+description: >-
+  Operational and lifecycle signals for Lizee, derived from the company's public
+  Atlassian Statuspage. Lizee does not publish a public developer portal, OpenAPI
+  definition, versioning policy, or deprecation policy, so the only externally
+  verifiable lifecycle surface is the status page and the versioned service names
+  it exposes (API v1, App v1).
+status_page:
+  url: https://lizee.statuspage.io
+  vanity_url: https://status.lizee.io
+  provider: Atlassian Statuspage
+  time_zone: Europe/Paris
+  feeds:
+    atom: https://lizee.statuspage.io/history.atom
+    rss: https://lizee.statuspage.io/history.rss
+    summary_json: https://lizee.statuspage.io/api/v2/summary.json
+  subscribe:
+    - email
+    - slack
+    - atom
+    - rss
+  # Components as published on the status page (verbatim names + status at fetch time)
+  components:
+    - name: API v1
+      status: operational
+    - name: e-commerce API & Admin
+      status: operational
+    - name: e-commerce frontends
+      status: operational
+    - name: App v1
+      status: operational
+    - name: Logistic Platform
+      status: operational
+    - name: Rental Platform
+      status: operational
+    - name: Clever Cloud
+      status: major_outage
+      note: Upstream PaaS dependency (Clever Cloud), not a Lizee-owned component.
+    - name: Bubble.io
+      status: operational
+      note: Upstream no-code dependency (Bubble.io), not a Lizee-owned component.
+    - name: Infrastructures
+      status: major_outage
+versioning:
+  observed_scheme: path/name versioning
+  evidence: Status page exposes "API v1" and "App v1"; production host api.lizee.io is live.
+  policy_published: false
+deprecation:
+  policy_published: false
+  sunset_header_observed: false
+sla:
+  published: false
+notes: >-
+  No public versioning or deprecation policy, changelog, or SLA was found. The
+  production API host https://api.lizee.io responds (health JSON) but returns 404
+  for all documentation and specification paths probed on 2026-07-20 — the API is
+  partner/internal and not publicly documented.
