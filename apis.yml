@@ -1,7 +1,27 @@
 aid: lizee
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/lizee.png
 name: Lizee
-description: Lizee is a company surfaced as a portfolio company of speedinvest and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Lizee is a Paris-based Retail-as-a-Service platform that helps brands and
+  retailers launch and operate circular commerce programs — rental, resale, and
+  second-hand — end to end. Its stack pairs a rental platform, a resale/e-commerce
+  platform, and a logistics platform (returns, refurbishment, reverse logistics)
+  behind an operations API so a brand can offer rent or buy-back experiences on top
+  of its existing catalog. Lizee runs a production API (api.lizee.io) and publishes a
+  public Atlassian Statuspage, though it does not expose a public developer portal,
+  OpenAPI definition, or SDKs — the API surface is partner and integration facing.
+  Lizee was added to the API Evangelist network as a portfolio company of Speedinvest.
 url: https://raw.githubusercontent.com/api-evangelist/lizee/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +31,44 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Retail
+- Rental
+- Resale
+- Second-Hand
+- Circular Economy
+- Logistics
+- E-Commerce
+- Reverse Logistics
+apis:
+- name: Lizee API v1
+  description: >-
+    Lizee's production operations API powering its rental, resale, and logistics
+    platforms. Confirmed live via the company status page (components "API v1" and
+    "e-commerce API & Admin") and the production host api.lizee.io. The API is
+    partner/integration facing and not publicly documented — no public reference,
+    OpenAPI, or SDK was found as of 2026-07-20.
+  humanURL: https://lizee.io
+  baseURL: https://api.lizee.io
+  properties:
+  - type: StatusPage
+    url: https://status.lizee.io
+common:
+- type: Website
+  url: https://lizee.io
+- type: StatusPage
+  url: https://status.lizee.io
+- type: Lifecycle
+  url: lifecycle/lizee-lifecycle.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 1
+  pass: local-v1
