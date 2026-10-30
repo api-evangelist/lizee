@@ -64,6 +64,75 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Lizee is a company surfaced as a portfolio company of speedinvest and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Lizee is a Paris-based Retail-as-a-Service platform that helps brands and retailers launch and operate circular commerce programs — rental, resale, and second-hand — end to end. Its stack pairs a rental platform, a resale/e-commerce platform, and a logistics platform (returns, refurbishment, reverse logistics) behind an operations API so a brand can offer rent or buy-back experiences on top of its existing catalog. Lizee runs a production API (api.lizee.io) and publishes a public Atlassian Statuspage, though it does not expose a public developer portal, OpenAPI definition, or SDKs — the API surface is partner and integration facing. Lizee was added to the API Evangelist network as a portfolio company of Speedinvest.
 
-Backed by: speedinvest
+**Areas:** Company · Retail · Rentals · Resale · Secondhand · Circular Economy · Logistics · E-Commerce · Reverse Logistics
+
+## Lizee on APIs.io
+
+Everything profiled for Lizee is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lizee/](https://apis.io/providers/lizee/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Lizee API v1](https://apis.io/apis/lizee/lizee-api-v1/) — Lizee's production operations API powering its rental, resale, and logistics platforms. Confirmed live via the company status page (components "API v1" and…
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://lizee.io)
+- [Blog](https://rms.lizee.io/blog/)
+- [Status](https://status.lizee.io)
+
+## API Evangelist rating
+
+**Kin Score 6.9** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 0.0** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/lizee/](https://apis.io/providers/lizee/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Lizee: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/lizee/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
